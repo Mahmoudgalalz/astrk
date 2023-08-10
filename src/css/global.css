@@ -29,7 +29,8 @@ body, html {
 }
 
 .app {
-	font-family: Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+	/* font-family: Inter var,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
+	font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
 	letter-spacing: .6px;
 	font-weight: normal;
 	color: var(--gray-color);
@@ -126,9 +127,9 @@ body, html {
 	border-color: var(--gray-color);
 }
 
-.font-mon {
+/* .font-mon {
 	font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-}
+} */
 
 @property --angle {
 	syntax: "<angle>";
