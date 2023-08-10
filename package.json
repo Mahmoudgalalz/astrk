@@ -1,5 +1,5 @@
 {
-  "name": "woke",
+  "name": "ares",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -21,8 +21,6 @@
     "@apollo/client": "^3.7.1",
     "@astrojs/vue": "^1.2.1",
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.8",
     "@vue/apollo-composable": "^4.0.0-beta.4",
     "astro-robots-txt": "^0.3.12",
