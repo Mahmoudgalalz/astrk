@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/layout.astro";
+import HomePage from "../components/landing/home.astro";
+import ProjectPage from "../components/landing/project.astro";
+---
+
+<Layout
+  title="Config manager"
+  description="Open source config manager."
+  card="https://woke.build/assets/img/woke.png"
+  url="https://woke.build/"
+>
+
+  
+  <div class="max-w-md mx-auto py-6 h-screen">
+    <!--Home -->
+    <HomePage/>
+    <!--Project -->
+    <ProjectPage/>
+  </div>
+</Layout>
+
+<script>
+</script>
+
+<style>
+</style>

@@ -1,0 +1,87 @@
+---
+// import Nav from "../../archived/nav.astro";
+// import Footer from "../../archived/footer.astro";
+import "../css/global.css";
+
+const { title, description, card, url } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#1A202C" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <meta
+      name="keywords"
+      content="configs, environment configs"
+    />
+    <meta name="pagename" content={title} />
+    <meta name="url" content={url} />
+    <meta name="image" content={card} />
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content={title} />
+    <meta itemprop="description" content={description} />
+    <meta itemprop="image" content={card} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@wokebuild" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={card} />
+    <meta name="twitter:creator" content="@wokebuild" />
+    <meta name="twitter:url" content="https://twitter.com/wokebuild" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={card} />
+    <link rel="canonical" href={url} />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="wokebuild" />
+    <meta name="apple-mobile-web-app-title" content="wokebuild" />
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#14171A" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="app antialiased relative">
+    <noscript>
+      <strong
+        >We're sorry but Woke doesn't work properly without Javascript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <!-- <Nav /> -->
+    <slot />
+    <!-- <Footer /> -->
+  </body>
+</html>
+<!-- Compressed JavaScript -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"
+></script>
